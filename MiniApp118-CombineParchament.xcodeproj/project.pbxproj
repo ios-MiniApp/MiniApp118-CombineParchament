@@ -14,6 +14,8 @@
 		8724AD6F29FB57E40023AEC5 /* MiniApp118_CombineParchamentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724AD6E29FB57E40023AEC5 /* MiniApp118_CombineParchamentTests.swift */; };
 		8724AD7929FB57E40023AEC5 /* MiniApp118_CombineParchamentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724AD7829FB57E40023AEC5 /* MiniApp118_CombineParchamentUITests.swift */; };
 		8724AD7B29FB57E40023AEC5 /* MiniApp118_CombineParchamentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724AD7A29FB57E40023AEC5 /* MiniApp118_CombineParchamentUITestsLaunchTests.swift */; };
+		8724AD8929FB58090023AEC5 /* Parchment in Frameworks */ = {isa = PBXBuildFile; productRef = 8724AD8829FB58090023AEC5 /* Parchment */; };
+		8724AD8B29FB58E20023AEC5 /* PageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8724AD8A29FB58E20023AEC5 /* PageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		8724AD7429FB57E40023AEC5 /* MiniApp118-CombineParchamentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MiniApp118-CombineParchamentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8724AD7829FB57E40023AEC5 /* MiniApp118_CombineParchamentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniApp118_CombineParchamentUITests.swift; sourceTree = "<group>"; };
 		8724AD7A29FB57E40023AEC5 /* MiniApp118_CombineParchamentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniApp118_CombineParchamentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8724AD8A29FB58E20023AEC5 /* PageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8724AD8929FB58090023AEC5 /* Parchment in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +100,7 @@
 			children = (
 				8724AD5D29FB57E20023AEC5 /* MiniApp118_CombineParchamentApp.swift */,
 				8724AD5F29FB57E20023AEC5 /* ContentView.swift */,
+				8724AD8A29FB58E20023AEC5 /* PageViewModel.swift */,
 				8724AD6129FB57E40023AEC5 /* Assets.xcassets */,
 				8724AD6329FB57E40023AEC5 /* Preview Content */,
 			);
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = "MiniApp118-CombineParchament";
+			packageProductDependencies = (
+				8724AD8829FB58090023AEC5 /* Parchment */,
+			);
 			productName = "MiniApp118-CombineParchament";
 			productReference = 8724AD5A29FB57E20023AEC5 /* MiniApp118-CombineParchament.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 8724AD5129FB57E20023AEC5;
+			packageReferences = (
+				8724AD8729FB58090023AEC5 /* XCRemoteSwiftPackageReference "Parchment" */,
+			);
 			productRefGroup = 8724AD5B29FB57E20023AEC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8724AD6029FB57E20023AEC5 /* ContentView.swift in Sources */,
+				8724AD8B29FB58E20023AEC5 /* PageViewModel.swift in Sources */,
 				8724AD5E29FB57E20023AEC5 /* MiniApp118_CombineParchamentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8724AD8729FB58090023AEC5 /* XCRemoteSwiftPackageReference "Parchment" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rechsteiner/Parchment";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8724AD8829FB58090023AEC5 /* Parchment */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8724AD8729FB58090023AEC5 /* XCRemoteSwiftPackageReference "Parchment" */;
+			productName = Parchment;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8724AD5229FB57E20023AEC5 /* Project object */;
 }
